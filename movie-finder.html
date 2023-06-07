@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Weather Dashboard</title>
+  <title>Movie Finder</title>
   <meta name="description" content="Case study page of Project" />
 
   <link rel="stylesheet" href="css/style.css" />
@@ -73,14 +73,14 @@
   </header>
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Weather Dashboard</h1>
+      <h1 class="heading-primary">Movie Finder</h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          Check the 5-day weather forecast in any US city
+          Find new movies to watch, save them, and rate them!
         </p>
       </div>
       <div class="project-cs-hero__cta">
-        <a href="https://brent-bew-canon.github.io/weather_forecast/" class="btn btn--bg" target="_blank">Live Link</a>
+        <a href="https://movie-finder-bb.herokuapp.com/" class="btn btn--bg" target="_blank">Live Link</a>
       </div>
     </div>
   </section>
@@ -88,20 +88,25 @@
     <div class="main-container">
       <div class="project-details__content">
         <div class="project-details__showcase-img-cont">
-          <img src="./assets/jpg/weatherDashboard.jpg" alt="Project Image" class="project-details__showcase-img" />
+          <img src="./assets/jpg/cinema.jpg" alt="Project Image" class="project-details__showcase-img" />
         </div>
         <div class="project-details__content-main">
           <div class="project-details__desc">
             <h3 class="project-details__content-title">Project Overview</h3>
             <p class="project-details__desc-para">
-              This app let's you look up a US city by name and uses the OpenWeatherMap API to find forecast details
-              about that city. It uses Bootstrap for the styling and creation of the forecast cards. It uses JavaScript
-              to create and display the forecast cards as well as the current forecast information.
+              This app let's the user browse from a list of movies and rate them on a scale of 1 - 10. Each user has
+              their own profile on the app, so the movie ratings are exclusive to them.
             </p>
             <p class="project-details__desc-para">
-              Additionally, the app uses local storage to host the previous search history. You can then click on any
-              previous search that is saved in the column on the left-hand side of the page to re-search for that city's
-              forecast data.
+              Additionally, the user can also choose to save a movie to a personal list of "saved movies". For example,
+              if the user comes across a new movie that they would like to watch in the future, they can add that movie
+              to the list. After they have watched it, the user can then delete the movie from the list.
+            </p>
+            <p class="project-details__desc-para">
+              This was a collaborative project between 4 developers. My role was focused on enabling the save and delete
+              functionality of the movies in the application. This was done by creating the MYSQL tables through
+              Sequelize, using JavaScript to enable user interaction with the movies, and creating the correct routing
+              through Express.js to update the database accordingly.
             </p>
           </div>
           <div class="project-details__tools-used">
@@ -110,18 +115,23 @@
               <div class="skills__skill">HTML</div>
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">jQuery</div>
-              <div class="skills__skill">OpenWeatherMap API</div>
-              <div class="skills__skill">Bootstrap</div>
-              <div class="skills__skill">GoogleFonts</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">Sequelize</div>
+              <div class="skills__skill">Heroku</div>
+              <div class="skills__skill">HandleBars.js</div>
+              <div class="skills__skill">Bcrypt</div>
+              <div class="skills__skill">API</div>
+              <div class="skills__skill">Animate CSS</div>
               <div class="skills__skill">GIT</div>
             </div>
           </div>
           <div class="project-details__links">
             <h3 class="project-details__content-title">See Live</h3>
-            <a href="https://brent-bew-canon.github.io/weather_forecast/"
-              class="btn btn--med btn--theme project-details__links-btn" target="_blank">Live Link</a>
-            <a href="https://github.com/Brent-Bew-Canon/weather_forecast"
+            <a href="https://movie-finder-bb.herokuapp.com/" class="btn btn--med btn--theme project-details__links-btn"
+              target="_blank">Live Link</a>
+            <a href="https://github.com/Brent-Bew-Canon/Cinema-Finder"
               class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code Link</a>
           </div>
         </div>
